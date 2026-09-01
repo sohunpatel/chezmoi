@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+from datetime import datetime
+import os
+import requests
+
+def get_wallpaper():
+    url = "https://bing.biturl.top/?resolution=UHD&format=json&index=0&mkt=zh-CN"
+
+    resp = requests.get(url)
+    wallpaper_url = resp.json()["url"]
+
+    resp = requests.get(wallpaper_url, allow_redirects=True)
+    wallpaper_path = os.path.abspath(os.path.dirname(__file__))
+    open(f"{wallpaper_path}/wallpaper.jpg", "wb").write(resp.content)
+
+if not os.path.isfile("wallpaper.jpg"):
+    get_wallpaper()
+else:
+    day = datetime.fromtimestamp(os.path.getmtime("wallpaper.jpg")).day
+    current_day = datetime.today().day
+    if day != current_day:
+        get_wallpaper()

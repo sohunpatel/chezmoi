@@ -1,0 +1,7 @@
+set $gnome-scheme org.gnome.desktop.interface
+exec_always {
+    gsettings set org.gnome.desktop.interface gtk-theme "{{ .gtkTheme }}"
+    gsettings set org.gnome.desktop.interface icon-theme "{{ .iconTheme }}"
+}
+exec_always $HOME/.config/waybar/waybar.sh
+exec_always rm -f /tmp/wob && mkfifo /tmp/wob && tail -f /tmp/wob | wob

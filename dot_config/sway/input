@@ -1,0 +1,7 @@
+input * {
+      dwt enabled
+      tap enabled
+      middle_emulation enabled
+      repeat_rate 100
+      repeat_delay 250
+}

@@ -1,0 +1,3 @@
+exec_always kanshi
+exec_always ~/.config/sway/get-wallpaper
+output * bg ~/.config/sway/wallpaper.jpg fill
