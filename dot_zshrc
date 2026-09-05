@@ -43,6 +43,7 @@ alias grhh="git reset HEAD --hard"
 
 alias cleandir="rm -rf ./*"
 alias lg="lazygit"
+alias y="yazi"
 
 # export EDITOR=hx
 export EDITOR=nvim

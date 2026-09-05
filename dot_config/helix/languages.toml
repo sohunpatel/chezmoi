@@ -1,0 +1,63 @@
+[[language]]
+name = "rust"
+auto-format = true
+indent = {tab-width = 4, unit = " "}
+
+[[language]]
+name = "cmake"
+indent = {tab-width = 4, unit = " "}
+
+[[language]]
+name = "cpp"
+auto-format = true
+indent = {tab-width = 4, unit = " "}
+
+[[language]]
+name = "c"
+auto-format = true
+file-types = ["c", "h"]
+indent = {tab-width = 4, unit = " "}
+
+[[language]]
+name = "go"
+auto-format = true
+indent = {tab-width = 4, unit = " "}
+
+[[language]]
+name = "bash"
+auto-format = true
+indent = {tab-width = 4, unit = " "}
+
+[[language]]
+name = "markdown"
+indent = { tab-width = 4, unit = " "}
+
+[[language]]
+name = "tcl"
+scope = "scope.tcl"
+roots = [".git"]
+file-types = ["tcl"]
+indent = { tab-width = 4, unit = " " }
+
+[[language]]
+name = "typst"
+scope = "scope.typ"
+roots = [".git"]
+file-types = ["typ"]
+indent = { tab-width = 4, unit = " "}
+
+[[language]]
+name = "markdown"
+soft-wrap.enable = true
+
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]
+
+[language-server.copilot]
+command = "copilot-language-server"
+args = ["--stdio"]
+
+[language-server.copilot.config]
+editorInfo = { name = "Helix", version = "25.01" }
+editorPluginInfo = { name = "helix-copilot", version = "0.1.0" }
