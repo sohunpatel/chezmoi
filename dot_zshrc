@@ -45,8 +45,8 @@ alias cleandir="rm -rf ./*"
 alias lg="lazygit"
 alias y="yazi"
 
-# export EDITOR=hx
-export EDITOR=nvim
+export EDITOR=hx
+# export EDITOR=nvim
 alias e="$EDITOR"
 
 function enter() {

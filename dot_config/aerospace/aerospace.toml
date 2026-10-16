@@ -155,8 +155,7 @@ automatically-unhide-macos-hidden-apps = false
 
     # Applications
     cmd-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
-    cmd-b = 'exec-and-forget open -n /Applications/qutebrowser.app'
-    # cmd-b = 'exec-and-forget /usr/local/bin/launch_safari'
+    cmd-b = 'exec-and-forget /usr/local/bin/launch_safari'
     cmd-e = 'exec-and-forget open -n /Applications/Marta.app'
 
     # Start screen saver
